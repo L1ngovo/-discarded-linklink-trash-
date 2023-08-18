@@ -1,44 +1,90 @@
-<script setup>
-defineProps({
-  msg: {
-    type: String,
-    required: true
-  }
-})
-</script>
-
 <template>
-  <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
-    <h3>
-      You’ve successfully created a project with
-      <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
-    </h3>
-  </div>
+    <div class="zero">
+        <div ref="aa" v-show="cc" class="one" @mouseup.stop="ts" :class="[type? 'active' : 'actived']">
+            1
+        </div>
+
+        <div ref="bb" v-show="cc" class="two" @mouseup.stop="ts0" :class="[type0? 'active' : 'actived']">
+            1
+        </div>
+        <input type="checkbox" value="2" @mouseup="sele">aa
+        <input type="checkbox" value="1">bb
+
+        <!-- <div ref="dd" v-show="cc" class="two" @mouseup.stop="ts1" :class="[type1? 'active' : 'actived']">
+            1
+        </div> -->
+        <!-- <button @click="show">click</button> -->
+    </div>
+    
 </template>
 
-<style scoped>
-h1 {
-  font-weight: 500;
-  font-size: 2.6rem;
-  position: relative;
-  top: -10px;
-}
+<script setup>
+import { ref } from 'vue'
 
-h3 {
-  font-size: 1.2rem;
-}
 
-.greetings h1,
-.greetings h3 {
-  text-align: center;
-}
+    let type = ref(true)
+    let type0 = ref(true)
+    let type1 = ref(true)
+    let aa = ref()
+    let bb = ref()
+    let dd = ref()
+    let cc = ref(true)
 
-@media (min-width: 1024px) {
-  .greetings h1,
-  .greetings h3 {
-    text-align: left;
-  }
-}
+    const sele = () => {
+        console.log(value);
+    }
+
+    const ts = () => {
+        type.value = !type.value
+        if(aa.value.innerText == bb.value.innerText){
+            cc.value =! cc.value
+        }
+        console.log(aa.value.innerText);
+    }
+    const ts0 = () => {
+        type0.value = !type0.value
+        if(bb.value == aa.value){
+            cc.value =! cc.value
+        }
+        // aa.value =! aa.value
+    }
+    // const ts1 = () => {
+    //     type1.value = !type1.value
+    //     if(dd.value == aa.value){
+    //         cc.value =! cc.value
+    //     }
+    //     // aa.value =! aa.value
+    // }
+      
+    const show = () => {
+        cc.value =! cc.value
+    }
+
+</script>
+
+<style lang="scss">
+    .one{
+        cursor: pointer;
+        border: 5px black;
+        margin: 10px;
+    }
+    .two{
+      cursor: pointer;
+    }
+    .one:hover{
+        background-color: green;
+        border: 2px solid black;
+    }
+    .active{
+        background-color:  yellow;
+        
+    }
+    .actived{
+        background-color: red;
+        color: white;
+        opacity: 0.3;
+        backdrop-filter: blur(10px);
+    }
+
+
 </style>
