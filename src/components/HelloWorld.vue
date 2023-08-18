@@ -7,7 +7,15 @@
         <div ref="bb" v-show="cc" class="two" @mouseup.stop="ts0" :class="[type0? 'active' : 'actived']">
             1
         </div>
-        <input type="checkbox" value="2" @mouseup="sele">aa
+        <div ref="aa"> 
+            <input type="checkbox" id="a" value="2" @mouseup="sele">
+            <label for="a">aa</label>
+        </div>
+        <div ref="bb">
+            <input type="checkbox" id="b" value="2" @mouseup="sele">
+            <label for="b">aa</label>
+        </div>
+        
         <input type="checkbox" value="1">bb
 
         <!-- <div ref="dd" v-show="cc" class="two" @mouseup.stop="ts1" :class="[type1? 'active' : 'actived']">
@@ -31,7 +39,10 @@ import { ref } from 'vue'
     let cc = ref(true)
 
     const sele = () => {
-        console.log(value);
+        if(aa.value.innerText == bb.value.innerText){
+            console.log('11');
+        }
+        
     }
 
     const ts = () => {
