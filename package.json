@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "postcss-px-to-viewport": "^1.1.1",
     "sass": "^1.65.1",
     "vue": "^3.3.4",
     "vue-router": "^4.2.4"
