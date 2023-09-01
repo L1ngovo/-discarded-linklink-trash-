@@ -1,29 +1,25 @@
 # linklink
 
-This template should help get you started developing with Vue 3 in Vite.
+- *Maybe there will be some introductions if the project is successful.*
+- *Why write in English? It might look more professional.*
 
-## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-## Customize configuration
+## A few digressions
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+​	It was a project that was going to die.
 
-## Project Setup
+​	At first, I wanted to familiarize myself with vue3, but then I got the idea to make a LinkGame so that I wouldn't be bored on the subway every day when I got home from work. 
 
-```sh
-npm install
-```
+​	So far, nothing has been written. 
 
-### Compile and Hot-Reload for Development
+​	Do not look at the code, or you will get a serious mental shock, this is just my own crazy place. 
 
-```sh
-npm run dev
-```
+​	This one uses a translation app. 
 
-### Compile and Minify for Production
+​	Forget it. 
 
-```sh
-npm run build
-```
+​	:D
+
+
+
