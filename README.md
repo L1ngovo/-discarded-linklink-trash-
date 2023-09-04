@@ -2,6 +2,7 @@
 
 - *Maybe there will be some introductions if the project is successful.*
 - *Why write in English? It might look more professional.*
+- *The project has been aborted*
 
 
 
@@ -23,3 +24,12 @@
 
 
 
+​	This project began on August 17, and now there are more than ten days, among which I have written some things and also checked some information, which can be regarded as learning a little bit of new things. 
+
+​	But now I have to announce that the project is dead. 
+
+​	Haha.
+
+​	I'm not interested in this anymore. I found something new. 
+
+​	:D
